@@ -22,7 +22,17 @@
 
 #### Example:
 
+```commandline
+import math
 
+number = 2.34
+
+print(math.ceil(number))   # Output: 3
+print(math.floor(number))  # Output: 2
+```
+
+In this example we round the number as required, but we don't have to write the code that does the work. 
+This is an example of abstraction.
 
 ### Encapsulation
 ### Inheritance
