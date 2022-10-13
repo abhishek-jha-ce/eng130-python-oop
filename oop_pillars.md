@@ -10,6 +10,14 @@
 ## Four Pillars of OOP
 
 ### Abstraction
+
+- It is a process of handling complexity by hiding unnecessary information from the user.
+- It lets user to implement complex logic on top, without understanding about all the hidden background/back-end complexity.
+- We can achieve abstraction by using abstract classes and methods in our programs.
+- Abstraction can be either `data abstraction` or `process abstraction`.
+
+
+
 ### Encapsulation
 ### Inheritance
 
