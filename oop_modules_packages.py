@@ -70,10 +70,3 @@
 # print(a+b)  # Output: 34
 # print(s1+s2)  # Output: HelloThere!
 
-import math
-
-number = 2.34
-
-print(math.ceil(number))   # Output: 3
-print(math.floor(number))  # Output: 2
-
