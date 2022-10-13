@@ -75,12 +75,55 @@ print(counter.value())  # Output: 3
 
 ### Inheritance
 
-- Inheritance allows us to define a class that inherits all the methods and properties from another class.
-
+- Inheritance refers to defining a new class with little or no modificatin to an existing class.
+- It allows us to define a class that inherits all the methods and properties from another class.
 - Parent class is the class being inherited from, also called base class.
-
 - Child class is the class that inherits from another class, also called derived class.
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/110366380/195652077-3c604f16-2dba-4353-901f-c0915e6db293.png">
+</p>
+
+#### Example: parent class/base class [person.py]
+```
+# A program to demonstrate inheritance
+
+class Person(object):
+
+    # Constructor
+    def __init__(self, name, id):
+        self.name = name
+        self.id = id
+    
+    def display(self):
+        print(self.name, self.id)
+
+
+emp = Person("Abhishek", 101)  # Creating a new instance of Person
+emp.display()  # Output Abhishek 101
+```
+#### Example: child class/ derived class [employee.py]
+```
+from person import Person  # Don't forget to import the class else it won't work
+
+
+class Emp(Person):  # The parent class within the brackets
+
+    def child_function(self):
+        print("This function can only be called by this class")
+
+
+Emp_details = Emp("Ayush", 102)  # Creating a new instance of Person
+
+Emp_details.display()  # Calling parent class function
+
+Emp_details.child_function()  # Calling child class function
+
+Output:
+Abhishek 101
+Ayush 102
+This function can only be called by this class
+```
 
 ### Polymorphism
 
