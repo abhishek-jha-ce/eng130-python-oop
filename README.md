@@ -25,3 +25,42 @@ import random
 
 print(random.random())
 ```
+
+```
+Welcome to "XYZ" Restaurant!
+
+ ***** Starter list *****
+1 . Salmon Platter
+2 . Oyesters
+3 . Pappadum
+4 . Empanadilas
+5 . Vol-au-vents
+6 . Dumpling
+7 . Canape
+Please select Your Starter: 6
+
+ ***** Mains list *****
+1 . Pasta Bake
+2 . Tteokbokki
+3 . Yakisoba
+4 . Nigri
+5 . Thai Green Curry
+6 . Burger
+7 . Paella
+8 . Pizza
+Please select Your Mains: 2
+
+***** Desserts list *****
+1 . Cream Brulee
+2 . Mochi
+3 . Apple Pie
+4 . Gulab Jamun
+5 . Dadar Gulung
+6 . Kremes
+Please select Your Desserts: 2
+
+ ***** Customer order list *****
+1 . Dumpling
+2 . Tteokbokki
+3 . Mochi
+```
