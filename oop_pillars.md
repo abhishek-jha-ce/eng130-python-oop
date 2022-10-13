@@ -16,6 +16,12 @@
 - We can achieve abstraction by using abstract classes and methods in our programs.
 - Abstraction can be either `data abstraction` or `process abstraction`.
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/110366380/195639042-e807bb9a-11b8-4807-9ec0-e4cc21851f14.png">
+</p>
+
+#### Example:
+
 
 
 ### Encapsulation
