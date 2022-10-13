@@ -7,32 +7,11 @@
 - Data are found in the form of fields also known as `attributes` or `properties`.
 - Code are used in the form of procedures also known as `methods` or `functions`.
 
-## Four Pillars of OOP
-
-### Abstraction
-
-- It is a process of handling complexity by hiding unnecessary information from the user.
-- It lets user to implement complex logic on top, without understanding about all the hidden background/back-end complexity.
-- We can achieve abstraction by using abstract classes and methods in our programs.
-- Abstraction can be either `data abstraction` or `process abstraction`.
-
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/110366380/195639042-e807bb9a-11b8-4807-9ec0-e4cc21851f14.png">
+  <img src="https://user-images.githubusercontent.com/110366380/195653308-3c56f0ab-044d-4b6c-b5ec-576b0e1acb95.png">
 </p>
 
-#### Example:
-
-```commandline
-import math
-
-number = 2.34
-
-print(math.ceil(number))   # Output: 3
-print(math.floor(number))  # Output: 2
-```
-
-In this example we round the number as required, but we don't have to write the code that does the work. 
-This is an example of abstraction.
+## Four Pillars of OOP
 
 ### Encapsulation
 
@@ -73,6 +52,58 @@ counter.increment()  # Counter Value: 3
 print(counter.value())  # Output: 3
 ```
 
+### Abstraction
+
+- It is a process of handling complexity by hiding unnecessary information from the user.
+- It lets user to implement complex logic on top, without understanding about all the hidden background/back-end complexity.
+- We can achieve abstraction by using abstract classes and methods in our programs.
+- Abstraction can be either `data abstraction` or `process abstraction`.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/110366380/195654972-12436e99-57ee-44a9-9511-e25046574991.png">
+</p>
+
+#### Example:
+
+```commandline
+import math
+
+number = 2.34
+
+print(math.ceil(number))   # Output: 3
+print(math.floor(number))  # Output: 2
+```
+
+In this example we round the number as required, but we don't have to write the code that does the work. 
+This is an example of abstraction.
+
+
+### Polymorphism
+
+- Polymorphism means multiple forms, same operator or function can take multiple forms. 
+- It is also useful in creating different classes which will have class methods with same name.
+- It helps in re-using a lot of code and decreases code complexity. 
+- Polymorphism is also linked to inheritance.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/110366380/195652781-52fbd6f2-f171-4abd-92dd-9d3d8a780019.png">
+</p>
+
+#### Example
+
+The '`+`' Operator. It adds two numbers if they are integers, but concatenates if they are string.
+
+```commandline
+a = 23
+b = 11
+
+s1 = "Hello"
+s2 = "There!"
+
+print(a+b)  # Output: 34
+print(s1+s2)  # Output: HelloThere!
+```
+
 ### Inheritance
 
 - Inheritance refers to defining a new class with little or no modificatin to an existing class.
@@ -83,6 +114,13 @@ print(counter.value())  # Output: 3
 <p align="center">
   <img src="https://user-images.githubusercontent.com/110366380/195652077-3c604f16-2dba-4353-901f-c0915e6db293.png">
 </p>
+
+Types of Inheritance in Python:
+- Single Inheritance.
+- Multiple Inheritance.
+- Multilevel Inheritance.
+- Hierarchical Inheritance.
+- Hybrid Inheritance.
 
 #### Example: parent class/base class [person.py]
 ```
@@ -124,27 +162,3 @@ Abhishek 101
 Ayush 102
 This function can only be called by this class
 ```
-
-### Polymorphism
-
-- Polymorphism means multiple forms, same operator or function can take multiple forms. 
-- It is also useful in creating different classes which will have class methods with same name.
-- It helps in re-using a lot of code and decreases code complexity. 
-- Polymorphism is also linked to inheritance.
-
-#### Example
-
-The '`+`' Operator. It adds two numbers if they are integers, but concatenates if they are string.
-
-```commandline
-a = 23
-b = 11
-
-s1 = "Hello"
-s2 = "There!"
-
-print(a+b)  # Output: 34
-print(s1+s2)  # Output: HelloThere!
-```
-
-
