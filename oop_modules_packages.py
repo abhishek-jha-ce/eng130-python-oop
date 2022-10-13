@@ -60,3 +60,12 @@ def add(value1, value2):
 
 # Return statement only returns value, doesn't print anything
 print(add(2, 3))
+
+a = 23
+b = 11
+
+s1 = "Hello"
+s2 = "There!"
+
+print(a+b)  # Output: 34
+print(s1+s2)  # Output: HelloThere!
