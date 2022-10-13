@@ -35,6 +35,44 @@ In this example we round the number as required, but we don't have to write the 
 This is an example of abstraction.
 
 ### Encapsulation
+
+- Encapsulation is the concept of bundling data and methods within a single Unit.
+- A class can be an example of encapsulation as it binds all the data members (variables) and methods into a single unit.
+- It provides well-defined, readable code.
+- Encapsulation is useful in putting the restrictions on accessing variables and methods directly thus preventing accidental modification of data.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/110366380/195642103-ba26c602-73f3-416f-9d8b-ad31921b1979.png">
+</p>
+
+#### Example:
+
+```commandline
+class Counter:
+    def __init__(self):
+        self.current = 0  # Initial value when an instance is created
+
+    def increment(self):  # Method increases the value of the current attribute by 1.
+        self.current += 1
+
+    def value(self):      # Method to return the current value of the attribute.
+        return self.current
+
+    def reset(self):      # Method to reset/set the current value to 0.
+        self.current = 0
+
+
+
+counter = Counter()  # Creates a new instance of Counter class - Counter initialize to 0
+
+
+counter.increment()  # Counter Value: 1
+counter.increment()  # Counter Value: 2
+counter.increment()  # Counter Value: 3
+
+print(counter.value())  # Output: 3
+```
+
 ### Inheritance
 
 - Inheritance allows us to define a class that inherits all the methods and properties from another class.
