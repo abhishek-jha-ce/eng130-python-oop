@@ -19,6 +19,65 @@ import random
 
 print(random.random())
 ```
+## Movie Ratings second iteration
+
+```
+# Program to check for what movies a user can watch
+
+def rating(age):
+    if age > 18:  # If adult, you can watch any movies.
+        print("You are " + user_age + " year Old. You can watch any movies you like")
+    elif age > 15:  # If Older than 15
+        print("You are " + user_age + " year Old. You can only watch \"U\" , \"PG\", \"12\" and, \"15\" rated movies")
+    elif age > 12:
+        print("You are " + user_age + " year Old. You can only watch \"U\" , \"PG\" and, \"12\" rated movies")
+    elif age > 8:
+        print("You are " + user_age + " year Old. You can only watch \"U\" and \"PG\" rated movies")
+    else:
+        print("You are " + user_age + " year Old. You can only watch \"U\" rated movies")
+
+
+user_prompt = True
+
+while user_prompt:
+    user_age = input("Please enter your age: ")  # Ask User for their age
+    if user_age.isdigit():  # Checks if the user has input numbers only
+        if int(user_age) < 117:  # Checks if the user is less than 117 years old
+            user_prompt = False
+        else:
+            print("You must be less than 117 Years Old!")
+    else:
+        print("Please enter a valid number")
+
+# Calling the function which determines the rating of the user
+rating(int(user_age))
+
+Output:
+Please enter your age: 17
+You are 17 year Old. You can only watch "U" , "PG", "12" and, "15" rated movies
+```
+
+## Age Calculator second iteration
+```
+def calculate_age(age):
+    return 2022 - int(age)
+
+
+user_prompt = True
+
+while user_prompt:
+    age = input("Please Enter your Age: ")
+    if age.isdigit():
+        user_prompt = False
+    else:
+        print("Please enter your age in digits only")
+
+print(f"You were born in {calculate_age(age)}")  # Output: Displays the year user was born
+
+Output:
+Please Enter your Age: 38
+You were born in 1984
+```
 ## Fizz Buzz second iteration
 ```
 # Define a method to print Fizz
@@ -52,7 +111,6 @@ for num in range(1, 101):
         buzz()
     else:
         print(num)
-
 ```
 ## Restaurant Helper second iteration
 
