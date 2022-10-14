@@ -209,3 +209,8 @@ Please select Your Desserts: 2
 - Step 2: create reptile.py as a child
 - Step 3: create snake.py and inherit from reptile
 - Step 4: create python_oop.py
+
+<p align="center>
+  <img src="images/python-inheritance.svg">
+</p>
+![Inheritance Example Image](images/python-inheritance.svg)
