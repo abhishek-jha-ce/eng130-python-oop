@@ -202,3 +202,10 @@ Please select Your Desserts: 2
 2 . Tteokbokki
 3 . Mochi
 ```
+
+### OOP Code along diagram
+
+- Step 1: create animal.py as parent
+- Step 2: create reptile.py as a child
+- Step 3: create snake.py and inherit from reptile
+- Step 4: create python_oop.py
