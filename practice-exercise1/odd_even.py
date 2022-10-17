@@ -21,4 +21,4 @@ def odd_number(num):
 
 
 print("Sum of Even Numbers: " + str(even_number(100)))
-print("Total of Odd Numbers: " + str(odd_number(100)))
+print("Total Number of Odd Numbers (count): " + str(odd_number(100)))
